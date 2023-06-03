@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+
+
+
+body{
+    margin: 0;
+    /* background-image: linear-gradient(to right , #3a6186,#601a2b); */
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: #FBD786;
+    padding: 0 2%;
+    height: 100px;
+    
+}
+
+header .title{
+    font-size: 140%;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    /* border: 1PX SOLID; */
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+header .list{
+    width: 50%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+
+header .contact{
+    width: 10%;
+    font-size: 140%;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    /* background-color: #4a4335; */
+    /* padding: 30px; */
+
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 3em;
+    font-family: 'Lobster Two', cursive;
+    font-size: 100%;
+    /* background-color: #f12711; */
+}
+
+header a:hover{
+    font-size: 0,1%;
+    border-bottom: -1% solid rgb(123, 119, 119);
+    border-radius: 6%;
+    padding: 10%;
+    box-shadow: 1% 1% 2% 1% gray;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    transition: 0.1s ease;
+
+    
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40%;
+    padding: 0,1%;
+    row-gap: 100%;
+    background-image: linear-gradient(to right, #141E305C, #243B555C);
+
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border: 2% solid ;
+    border-radius: 15%;
+    
+
+}
+
+.container .content{
+    color: white
+    
+}
+
+
+.container1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1%;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+ .leftcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30% 20% 12% ;
+    gap: 1%;
+    
+}
+
+.layout-item:first-child{
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+
+
+.rightcontainer{
+    color: black;
+    padding: 5%;
+    padding-left: 10%;
+    font-size: 120%;
+}
+
+.rightcontainer i{
+    font-size: 140%;
+    color: red;
+}
+
+.rightcontainer u{
+    font-size: 140%;
+    color: red;
+    
+}
+
+
+.rightcontainer .box{
+    background-color: rgb(231, 228, 228);
+    padding: 1%;
+}
+
+.rightcontainer .box img{
+    width: 20%;
+}
+
+.rightcontainer .ship{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+.rightcontainer .dathang span{
+    color: gray;
+    font-size: 140%;
+}
+
+.rightcontainer .vanchuyen{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: top; */
+}
+
+.rightcontainer .size{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    width: 80%;
+    gap: 5%;
+    
+   
+}
+
+.rightcontainer .size1:hover{
+    border: 2px solid red;
+}
+
+
+
+
+.rightcontainer .size1{
+    border: 1px solid rgb(212, 208, 208);
+    font-size: 1.2rem;
+    padding: 1%;
+    width: 60%;
+    text-align: center;
+    cursor: pointer;
+    
+    
+}
+
+.size2:first-child{
+    grid-row: 1/3;
+    /* grid-column: 1/3; */
+}
+
+.soluong{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+}
+
+.number{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(203, 201, 201);
+    font-weight: BOLD;
+    width: 50px;
+}
+
+.cart{
+    display: grid;
+    grid-template-columns: 1fr 10px  1fr;
+    /* gap: 10px; */
+}
+.cart:hover{
+    color: orange;
+    border: solid white;
+}
+.cart1:first-child{
+    grid-column: 1/3;
+}
+.cart1{
+    background-color: rgb(243, 210, 210);
+    color: orangered;
+    padding: 3%;
+    width: 90%;
+    text-align: center ;
+    border: 1px solid;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy{
+    background-color: rgb(236, 39, 39);
+    color: white;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.buy:hover{
+    color:orange;
+    border: solid white ;
+}
+
+@media (min-width: 300px) {
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr;
+    }
+}
+@media  (max-width:740px) {
+    /* header{
+        width: 100%;
+        display: flex;
+        height: auto;
+        position: fixed;
+     } */
+     header img{
+        width: 20%;
+        height: auto;
+     }
+     .dat img{
+        width: 40px;
+     }
+     .dat{
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        width: 10;
+     }
+     .rightcontainer u{
+        font-size: 100%;
+
+     }
+     .rightcontainer i{
+        font-size: 15px;
+     }
+
+     header ul li {
+        font-size: 10px;
+        display: inline-block;
+        
+     }
+     .title{
+        font-size: 10%;  cursor: pointer;
+       
+     }
+     .list{
+        width: 50%;
+
+     }
+     .contact{
+        font-size: 50%;
+     }
+     /* .leftcontainer{
+        
+        width: 100%;
+    } */
+    .container1 img{
+        width: 100%;
+        height: auto;
+    }
+    .layout-item {
+        display: grid;
+        grid-template-columns: auto auto;
+       
+    }
+    .rightcontainer .oi{
+        font-size: 13px;
+    }
+    .rightcontainer span u{
+      
+    }
+    .box{
+        width: 100%;
+    }
+    .box span{
+        font-size: 10;
+        display: inline-block;
+    }
+    .ship{
+
+    }    
+    .vanchuyen{
+        width: 10%;
+        font-size: 10;
+    }
+
+}
+@media screen and  (min-width:768px ){
+    header .list{
+        width: 60%;
+        
+    }
+    .layout-item img{
+        width: 90%;
+    }
+}
